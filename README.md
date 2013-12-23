@@ -12,7 +12,7 @@ SSH support is also included to allow remote access to the Docker container when
 Usage
 ------
 
-# Getting Started
+### Getting Started
 
 This example contains a run.sh script which will build the Docker Image and run it as a named container with the following ports exposed:
 
@@ -21,14 +21,14 @@ This example contains a run.sh script which will build the Docker Image and run 
 
 After running ./run.sh the output docker log will provide you a randomly generated SSH password to use for log in (search for the line "ssh with: ssh remoteuser@localhost and password:")
 
-# Website
+### Website
 
 The website will be accessible via your host IP:5080 (the mapped port to port 80 of the Docker container)
 
 * e.g. ```127.0.0.1:5080```
     * Should display a webpage saying ```Hello World```
 
-# SSH Remote Access
+### SSH Remote Access
 
 To SSH into the Docker container you will need the randomly generated password which is output in the Docker build logs.
 
@@ -37,7 +37,7 @@ To SSH into the Docker container you will need the randomly generated password w
 * Enter password that was displayed at Docker build time
 * You should now have access to the Docker container in the sudo and adm group
 
-# Stopping Container
+### Stopping Container
 
 There is a helper script included called ./stop.sh which will stop the running container and remove the container.
 
