@@ -26,6 +26,4 @@ RUN export REMOTEUSER_PASSWD=`tr -dc "[:alpha:]" < /dev/urandom | head -c 8`; ex
 ADD run.sh /usr/local/bin/run
 RUN chmod +x /usr/local/bin/run
 
-EXPOSE 22 80
-
 CMD ["/usr/local/bin/run"]
